@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+.weather-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  color: white;
+  width: 300px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.heading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh; /* Ya jitna space chahiye utna height */
+}
+
+/* 
+ 
+  
+  */
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.search-box button:hover {
+  transform: scale(1.05);
+}
+
+.weather-box img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+  transition: transform 0.5s ease;
+}
+
+.weather-box img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.weather-box h1 {
+  font-size: 2.5rem;
+}
+
+.weather-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.details div p:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.details div p:last-child {
+  font-size: 0.9rem;
+}
+
+.wind img {
+  max-width: 2rem;
+}
+
+.humidity img {
+  max-width: 2rem;
+}
+
+.weather-box {
+  display: none;
+}
+
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
